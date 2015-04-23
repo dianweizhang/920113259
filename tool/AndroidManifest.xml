@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="9" />
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
 
     <application
         android:allowBackup="true"
@@ -92,7 +92,14 @@
                 <category android:name="android.intent.category.TOOLS" />
             </intent-filter>
       </activity>   
-      
+	<activity
+            android:name=".eventbus.EventBusActivity"
+            android:label="EventBus/EventBusActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.TOOLS" />
+            </intent-filter>
+    </activity>        
 	<activity
             android:name=".crop.CropMainActivity"
             android:label="Crop/CropMainActivity">
