@@ -76,6 +76,14 @@
                 <category android:name="android.intent.category.TOOLS" />
             </intent-filter>
       </activity>
+	<activity
+            android:name=".myview.DatePickerActivity"
+            android:label="MyView/DatePickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.TOOLS" />
+            </intent-filter>
+      </activity>  
       <activity
             android:name=".volley.MyVolleyActivity"
             android:label="Volley/MyVolleyActivity">
@@ -127,4 +135,5 @@
     	
     </application>
 <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>
